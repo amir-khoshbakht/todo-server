@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Debug API",
+      "type": "node",
+      "program": "${workspaceFolder}/src/main.ts",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register"
+      ],
+      "console": "integratedTerminal",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"]
+    }
+  ]
+}
